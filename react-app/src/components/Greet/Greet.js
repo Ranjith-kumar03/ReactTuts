@@ -2,13 +2,16 @@
 import Welcome from './Welcome'
 
 
-export const Greet = ()=>{
+export const Greet = (props)=>{
 
+    console.log(props)
 
     return(
-        <div class="greet">
-            <Welcome/>
-            <h1>Hello Ranjit</h1>
+        <div className="greet">
+           
+            
+            <h1>Hello  {props.name}</h1>
+            {props.children}
         </div>
     )
 
